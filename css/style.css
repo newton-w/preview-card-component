@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(30, 38%, 92%);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  margin: 27px 16px;
+  background: hsl(0, 0%, 100%);
+  margin: 26px 5vw;
+  border-radius: 8px;
+  height: 610px;
+}
+.card-img-desktop {
+  display: none;
+}
+.card-img img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-content {
+  padding: 26px 26px 24px 24px;
+  height: 370px;
+}
+.card-content h1 {
+  font-family: "Fraunces";
+  padding-top: 18px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+.card-content h3 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: hsl(228, 12%, 48%);
+}
+.card-content .para {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.3rem;
+  /* padding-bottom: 32px; */
+}
+.card-content .price {
+  color: hsl(158, 40%, 35%, 1);
+  font-size: 29px;
+  font-family: "Fraunces";
+  padding-bottom: 21px;
+}
+.card-content .price span {
+  font-size: 12px;
+  color: hsl(212, 21%, 14%);
+  text-decoration: line-through;
+}
+.card-content button {
+  border: none;
+  background: hsl(158, 40%, 35%, 1);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 35px;
+  border-radius: 8px;
+  cursor: pointer
+}
+.card-content button:hover {
+  background: hsl(156, 42%, 18%, 1);
+}
+
+@media (min-width: 600px) {
+  * {
+    overflow: visible;
+  }
+  .card-img {
+    display: none;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 449px;
+    width: 600px;
+    margin: calc((100vh - 449px) / 2);
+  }
+  .card-img-desktop {
+    display: block;
+  }
+  .card-img-desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow-x: visible;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 32px;
+    padding-left: 30px;
+  }
+  
+  .card-content h1 {
+    padding-bottom:31px ;
+    padding-top: 21px;
+  }
+
+  .card .price{
+    padding-bottom: 34px;
+  }
+  .cart button{
+    padding-bottom: 31px;
+  }
+  
+}
