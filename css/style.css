@@ -132,18 +132,18 @@ body {
   .cart button{
     padding-bottom: 31px;
   }
-  .attribution{
+  footer{
     transform: translateY(-40px);
   }
   
 }
 /* footer */
-.attribution {
+footer {
   transform: translateY(-10px);
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
